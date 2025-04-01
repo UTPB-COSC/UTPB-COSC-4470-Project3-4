@@ -1,0 +1,2 @@
+cd ~
+tar -vxzf 

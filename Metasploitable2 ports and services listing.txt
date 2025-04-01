@@ -1,0 +1,37 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-03-06 17:29 EST
+Nmap scan report for 192.168.125.128
+Host is up (0.0010s latency).
+Not shown: 65506 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp		        required
+22/tcp    open  ssh		        required
+23/tcp    open  telnet		    required?
+25/tcp    open  smtp		    close
+53/tcp    open  domain		    close
+80/tcp    open  http		    required
+111/tcp   open  rpcbind		    close
+139/tcp   open  netbios-ssn	    close
+443		        https		    not present - should be open?
+445/tcp   open  microsoft-ds	close
+512/tcp   open  exec		    close
+513/tcp   open  login		    close
+514/tcp   open  shell		    close
+1099/tcp  open  rmiregistry	    close
+1524/tcp  open  ingreslock	    required?
+2049/tcp  open  nfs		        close
+2121/tcp  open  ccproxy-ftp	    close
+3306/tcp  open  mysql		    required?
+3632/tcp  open  distccd		    close
+5432/tcp  open  postgresql	    required?
+5900/tcp  open  vnc		        close
+6000/tcp  open  X11		        close
+6667/tcp  open  irc		        close
+6697/tcp  open  ircs-u		    close
+8009/tcp  open  ajp13		    close
+8080		    http		    not present - should be open?
+8180/tcp  open  unknown		    close
+8787/tcp  open  msgsrvr		    close?
+38500/tcp open  unknown		    close
+44890/tcp open  unknown		    close
+60435/tcp open  unknown		    close
+60737/tcp open  unknown		    close
