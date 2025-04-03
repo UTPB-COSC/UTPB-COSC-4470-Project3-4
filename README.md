@@ -14,12 +14,16 @@ Each group will select an eight-hour period during which they will have access t
 
 The servers that you will be using are old, and as a result your selected operating systems can have (at most) minimum requirements of dual pentium 3 i386 processors at roughly ~1GHz each, 2GB total RAM at maximum 133MHz transfer rate, and up to 33GB HDD space.  This significantly limits the set of operating systems you can select and may limit the degree to which you can install updates on these systems once they are set up.
 
+In order for your groups to have access to the systems in the internal network, I will also have to set up my router and modem with port forwarding to allow you through the two NAT layers.  Many of the free and open-source firewall and IDS systems you can opt to choose for your configuration provide web-based GUIs for things like writing firewall/SNORT rules and performing monitoring.  Similarly, many of them provide dedicated alarm and notification systems which either use web-based portals or send out alerts via specific ports.  Thus, in addition to submitting a selection of operating systems and a network topology, each group has up to ten ports that they can nominate for forwarding.  Keep in mind that at least five of these must be used for: MS2 FTP, SSH, and HTTP ports and the SSH ports for the other two systems.  This leaves you with up to five additional ports you can ask to be configured for your use.
+
 Keep in mind that when you first gain access to the systems that you have asked me to set up for your group, you may have to configure your chosen firewall to allow the SSH/Telnet protocol through so that you can gain access to the inner servers.
 
 ### Deliverables:
 Each group will submit a written plan of action, including:
  * A list of the two operating systems you want set up on the servers that are not running Metasploitable, along with download links so that I can download and create install disks.
+ * Up to two username and password pairs per server.
  * A description of the desired network topology consisting of a set of nodes (e.g. router, firewall, switch, IDS, web server) and a set of connections (e.g. router-firewall, firewall-switch, switch-IDS, switch-server).
+ * A list of the (up to) ten ports you want to be opened for your use, in the form (WAN port to LAN IP:port) where "WAN port" is a number in the range (35000, 60000) and "LAN IP:port" is the operating system and port number for the desired service.
  * An outline of the planned hardening actions to be taken.
 Assume that I will need at least a week to download your selected images and prepare disks.
 
